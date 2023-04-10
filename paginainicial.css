@@ -1,0 +1,323 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+  
+}
+
+header {
+    width: 100vw;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    box-shadow: rgba(187, 176, 176, 0.7) 4px 6px 8px;
+}
+
+.logo > img {
+    height: 60px;
+}
+
+.hesquerda {
+    grid-area: he;
+    display: flex;
+    align-items: center;
+}
+
+header > ul {
+    display: flex;
+}
+
+ul > li{
+    list-style-type: none;
+    padding-left: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.hdireita {
+    grid-area: hd;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-01  {
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(247, 247, 247);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+header .btn-01 {
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+.btn-01:hover {
+    background-color: rgb(241, 232, 232);
+    box-shadow: rgba(187, 176, 176, 0.7) 4px 6px 12px;
+    transform: scale(0.9);
+    transition: 0.5s ease-out;
+}
+
+.btn-02 {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+}
+
+.btn-02:hover {
+    transform: scale(0.9);
+    box-shadow: rgba(187, 176, 176, 0.7) 4px 6px 12px;
+    transition: 0.5s ease;
+}
+
+.heroes{
+    width: 92%;
+    padding-left: 120px;
+    margin-bottom: 25px;
+    
+}
+
+.heroes img{
+    width: 100%;
+}
+    
+.saibamais{
+    width: 84%;
+    height: 150px;
+    background-color: rgb(217, 121, 121);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.saibamais > p {
+    width: 70%;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 450;
+}
+
+.amamos {
+    width: 84%;
+    margin: 25px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'amamosimagem amamostexto'
+    ;
+}
+
+.amamos-img{
+    grid-area: amamosimagem;
+}
+
+.amamos-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.amamos-texto{
+    color: white;
+    grid-area: amamostexto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 40px;
+    background-color: rgb(187, 80, 68);
+}
+
+.amamos-texto > p{
+    font-size: 1.6rem;
+    font-weight:400;
+}
+
+#subtitulo{
+    font-size: 1.0rem;
+    line-height: 2.0rem;
+}
+
+.info {
+    width: 84%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "bebidastexto bebidasimg"
+    ". ."
+    ". .";
+}
+
+.bebidas-texto{
+    color: white;
+    grid-area: bebidastexto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(187, 80, 68);
+}
+.bebidas-texto> p{
+    font-size: 1.6rem;
+    font-weight:400;
+}
+
+#subtitulo2 {
+    font-size: 1.0rem;
+    line-height: 2.0rem;
+}
+    
+
+
+.bebidas-img{
+    grid-area: bebidasimg;
+}
+
+.bebidas-img img{
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100vw;
+    margin: 30px 0;
+}
+
+.informacoes{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.informacoes ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.destaque {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+
+.informacoes ul li {
+    font-size: 0.8rem;
+    color: grey;
+    padding-top: 16px;
+}
+
+.sociais{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.sociais i{
+    padding-left: 16px;
+    font-size: 2rem;
+}
+
+.rodape ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    width: 100vw;
+}
+
+.rodape li{
+    padding-left: 16px;
+}
+
+.rodape p{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 30px;
+}
+
+@media (max-width: 620px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .heroes{
+        visibility: hidden;
+    }
+
+    .amamos {
+        width: 84%;
+        margin: 25px auto;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "amamosimagem"
+        "amamostexto"
+        ;
+    }
+
+    .info {
+        width: 84%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "bebidastexto"
+        "bebidasimg"
+        ;
+    }
+    
+}

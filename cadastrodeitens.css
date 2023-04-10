@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "h h"
+    "f f"
+    "r r"
+    ;
+}
+
+header{
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+header > img {
+    height: 80px;
+    width: auto ;
+}
+
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    column-gap: 15px;
+    color:white;
+}
+
+aside{
+    grid-area: f;
+    background-color: rgb(196, 40, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+form{
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    row-gap: 15px;
+}
+
+form > input {
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: gray 3px 3px 6px;
+}
+
+form > input:hover{
+    background-color: aqua;
+}
+
+form > input[type="submit"]{
+    background-color: rgb(78, 234, 53);
+    font-size: 18px;
+    color: rgb(240, 240, 240);
+    width: 15vw;
+    margin:0 auto;
+    box-shadow: gray;
+}
+
+form > textarea{
+    width: 300px;
+}
+
+input[type="text"]{
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+
+
+input[type="text"]:valid{
+    background-image: url(img/correct.png);
+    background-repeat: no-repeat;
+    background-position: 95% 45%;
+    background-size: 16px;
+    background-color: rgb(178, 238, 218);
+}
+
+input[type="text"]:invalid{
+    background-image: url(img/warning.png);
+    background-repeat: no-repeat;
+    background-position: 95% 45%;
+    background-size: 16px;
+    background-color: rgb(239, 86, 111);
+}
+
+form > label{
+    color: white;
+    font-size: 18px;
+}
+
+footer{
+    grid-area: r;
+    display: flex;
+    justify-content: left;
+    background-color: rgba(75, 26, 26, 0.405);
+    color: white;
+    padding: 60px;
+    border-top: 5px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 391px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "h"
+        "f"
+        "r"
+        ;
+    }
+    header > img {
+        height: 50px;
+        width: auto ;
+    }
+
+    input[type="text"]{
+        display: flex;
+        align-items: center;
+        width: 200px;
+    }
+
+
+
+}
