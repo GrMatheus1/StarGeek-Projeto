@@ -9,7 +9,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
     "h h"
     "c c"
@@ -82,14 +82,13 @@ main > a{
     
 }
 
-@media (max-width: 391px) {
+@media (max-width: 800px) {
     .container{
         display: grid;
         grid-template-columns: 1fr ;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto ;
         grid-template-areas:
         "h"
-        "c"
         "c"
         ;
     }
