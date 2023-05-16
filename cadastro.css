@@ -67,7 +67,7 @@ form > input:hover{
     background-color: aqua;
 }
 
-form > input[type="submit"]{
+.submit{
     background-color: rgb(78, 234, 53);
     font-size: 18px;
     color: rgb(240, 240, 240);

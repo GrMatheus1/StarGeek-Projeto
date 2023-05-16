@@ -1,25 +1,25 @@
-const nome = document.getElementById("nome");
+const formulario =  document.getElementById("formulario");
 const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 
 formulario.onsubmit = (evento) =>{
     if(nome.value == ""){
         evento.preventDefault();
-        mensagem.innerHTML ="<p> Digite Seu Nome! </p>";
+        alert("Digite Seu Nome!")
         nome.focus();
         return null;
     }
 
     if(email.value == ""){
         evento.preventDefault();
-        mensagem.innerHTML = "<p> Digite seu email! </p>";
+        alert("Digite Seu E-mail!")
         email.focus();
         return null;
     }
 
     if(senha.value == ""){
         evento.preventDefault();
-        mensagem.innerHTML = "<p> Digite sua senha! </p>";
+        alert("Digite Sua Senha!")
         senha.focus();
         return null;
     }
