@@ -1,7 +1,8 @@
 const botaomodal = document.getElementById("btncadastrar");
 const cards = document.querySelector(".cards");
 
-
+var emaillogado;
+femaillogado();
 
 carregarCatalogo();
 function carregarCatalogo(){
@@ -14,7 +15,8 @@ function carregarCatalogo(){
     }
 
     dados.forEach((elemento, indice) => {
-        let divcard = document.createElement("div");
+        if(elemento.email == emaillogado){
+            let divcard = document.createElement("div");
         divcard.setAttribute("class", "card")
         divcard.innerHTML = `<img src="img/${elemento.foto}"> 
         <div class="nome">${elemento.nome}</div>
@@ -23,7 +25,7 @@ function carregarCatalogo(){
         <a onclick="excluir(${indice})">Excluir</a></div>
         </div>`;
         
-        cards.appendChild(divcard);
+        cards.appendChild(divcard);}
         
     });
 }
@@ -47,3 +49,11 @@ function editar(indice){
 botaomodal.onclick = () =>{
     window.location.assign("cadastrodeitens.html");
 }
+function femaillogado(){
+    let dados = JSON.parse(sessionStorage.getItem("logado"));
+    if (dados == null){
+      window.location.assign("login.html");
+    }else{
+      emaillogado = dados[0].email;
+    }
+  }
