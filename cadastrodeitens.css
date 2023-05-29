@@ -83,6 +83,10 @@ input[type="text"]{
     width: 350px;
 }
 
+.cadmoda > .modal > textarea{
+    display: flex;
+}
+
 
 input[type="text"]:valid{
     background-image: url(img/correct.png);

@@ -44,11 +44,25 @@ main{
     align-items: center;
     border-bottom: 3px solid white;
 }
-
-.cards{
-    display: flex;
-    justify-content: center;
+.cadmodal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 999;
     align-items: center;
+    justify-content: center;
+  }
+
+ .cards {
+    width: 100vw;
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .card{
@@ -82,6 +96,28 @@ main > a{
     
 }
 
+input > .foto {
+    width: 10%;
+    height: 10%;
+}
+
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+    color: whitesmoke;
+}
+
+.nome {
+    text-align: center;
+    font-size: 25px;
+}
+.descricao {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(175, 140, 140);
+}
 @media (max-width: 800px) {
     .container{
         display: grid;
@@ -106,4 +142,53 @@ main > a{
         flex-direction: column;
     }
 
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .card img{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 300px;
+    height: 200px;
+}
+.cards img:hover{
+    opacity: 0.7;
+}
+.cardinfo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.cardnome {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(253, 38, 124);
+    text-align: center;
+    margin-top: -5px;
+    padding: 20px;
+}
+
+.cardnome p{
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.btn{
+  display:block;
+}
+
+.btneditar{
+  display: block;
 }

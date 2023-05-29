@@ -11,22 +11,31 @@
 
     <div class="container">
         
+        <div class="cards">
+        </div>
+
         <header>
             <img src="img/Star Geek Logo.jpg" alt="Logo">
         </header>
 
         <aside>
-            <form action="http://127.0.0.1:5500/catalogo.html">
-                <label for="">Nome do Produto:</label>
-                <input type="text" name="" id="" required>
-
-                <label for="">Descrição:</label>
-                <br>
-                <textarea name="txtivoce" id="ivoce" cols="30" rows="10"></textarea>
-
-                <input type="submit" value="Enviar">
-            </form>
-
+            <div class="cadmodal">
+                <div class="modal">
+                    <form id="formulario">
+                        <label for="">Nome do Produto:</label>
+                        <input type="text" name="" id="inomep">
+        
+                        <label for="">Descrição:</label>
+                        <br>
+                        <textarea name="txtivoce" id="idescricao" cols="30" rows="10"></textarea>
+                        <br> 
+                        <label for="">Foto:</label>
+                        <input type="file" name="foto" id="foto">
+        
+                        <input type="submit" value="Enviar" id="enviar">
+                    </form>
+                </div>
+            </div>
         </aside>
 
         <footer>
@@ -38,6 +47,6 @@
         </footer>
 
     </div>
-    
+    <script src="cadastrodeitens.js"></script>
 </body>
 </html>
