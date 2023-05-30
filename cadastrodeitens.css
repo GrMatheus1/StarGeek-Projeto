@@ -44,12 +44,14 @@ aside{
     height: 600px;
 }
 
+
 form{
     grid-area: f;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
     row-gap: 15px;
 }
 
